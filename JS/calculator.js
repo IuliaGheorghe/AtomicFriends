@@ -272,12 +272,19 @@ function numere(formulaMol, currentInd, formulaMol){
 
 }
 
+let num = 1;
+
 function paranteza(copieFormula){
-  let secventa = "";
+  let vectorNumere = [];
   for(let i = 1;i<copieFormula.length;i++)
-    if(copieFormula[i]!=")") secventa+=copieFormula[i];
-  console.log("Aceata este secventa din paranteza " + secventa);
-  return secventa;
+    if(copieFormula[i]=")")  
+       {if(Number(copieFormula[i+1]) || copieFormula[i+1]==='0'){ 
+        vectorNumere.push(copieFormula[i+1]); num=Number(vectorNumere.join("")); 
+          console.log(num);}
+        }
+      
+      
+        return num;
   
 }
 
@@ -298,7 +305,12 @@ function subVerif(copieFormula, object, objectKeys){
 function verifica(formulaMoleculara){
  
  
- if(formulaMoleculara[0] === "(")  {console.log("Am dat de o paranteza"); formulaMoleculara = paranteza(formulaMoleculara);} 
+ if(formulaMoleculara[0] === "(")  {
+  console.log("Am dat de o paranteza"); num=paranteza(formulaMoleculara);
+  formulaMoleculara = formulaMoleculara.slice(1, formulaMoleculara.length);
+  currentIndex++;
+  console.log("F.M " + formulaMoleculara);
+} 
 
   let object = findGoodObject(formulaMoleculara);
   let objectKeys = Object.keys(object);
@@ -313,11 +325,18 @@ function verifica(formulaMoleculara){
 
   numere(formulaMoleculara,currentIndex, formulaMoleculara);
   console.log("Numarul ce se afla dupa elementul gasit " + nr);
-  masaMoleculara+=nr*value;
+  console.log(num);
+  masaMoleculara+=num*nr*value;
   console.log("Masa Moleculara Temporara: " + masaMoleculara);
   formulaMoleculara = formulaMoleculara.substring(currentIndex+1, formulaMoleculara.length);
   console.log("Noua formula moleculara: " + formulaMoleculara);
   nr=1;
+
+ if(formulaMoleculara[0] === ")")  {
+
+  formulaMoleculara = formulaMoleculara.slice(num.toString().length+1, formulaMoleculara.length); 
+  currentIndex+=num.toString().length+1; num=1;
+  console.log("F.M " + formulaMoleculara);}
   if(formulaMoleculara.length!==0) { let formulaMol= formulaMoleculara; verifica(formulaMol);}
 
   return true;
@@ -373,4 +392,4 @@ function flow(){
    nr=1;
    value=0;
 
-}
+ }
