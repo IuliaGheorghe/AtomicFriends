@@ -1,0 +1,338 @@
+
+body{
+	margin: 0;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	background-color: #C6AFCC;
+}
+
+a{
+	text-decoration: none;
+}
+
+.fa{
+	font-size: 30px;
+	color: #fff;
+}
+
+#menux{
+	display: flex;
+	margin-right: 25px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#menu{
+	display: flex;
+	position:absolute;
+	z-index: 4;
+	right:0;
+	flex-direction: column;
+	background-color:thistle;
+	width: 25vw;
+	min-height: 100%;
+}
+
+#logo-div{
+	display: flex;
+	align-items: center;
+}
+
+#menu div{
+	padding:20px;
+	border-bottom: 2px solid #C6AFCC;
+}
+
+#menu div:hover{
+	background-color: #84548F;
+	border-bottom: 2px solid #fff;
+}
+
+div a{
+	font-family: 'Montserrat' , sans-serif;
+	color:#fff;
+	font-size: 18px;
+}
+
+.logo{
+
+	font-family: 'Montserrat' , sans-serif;
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	padding: 20px;
+}
+
+span a:hover{
+
+    color:#84548F;
+	/*border-bottom:3px solid purple;*/
+} 
+
+
+
+#welcome-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0;
+	height: 650px;
+	background-image: url('WelcomeHome.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.welcome-text{
+
+	font-family: 'Montserrat',sans-serif;
+	letter-spacing: 1px;
+	font-size: 60px;
+	color:#fff;
+}
+
+.welcome-paragraph{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	padding-top: 30px;
+	color:#fff;
+}
+
+#despre-atomic-friends, #principii, #postari-recente-teorie, #postari-recente-teste{
+	margin: 80px 30px;
+}
+
+.subtitle, .main, #main-change{
+	font-weight: 600;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	color:#84548F;
+	padding-bottom: 30px;
+	letter-spacing: 1px;
+}
+
+.main, #main-change{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.text{
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	line-height: 30px;
+	color:rgba(0,0,0,0.7);
+}
+
+.lista-principii{
+
+	font-family: 'Montserrat' , sans-serif;
+	font-weight: 500;
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+	color:rgba(0,0,0,0.7);
+}
+
+.container-teorie {
+	-webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.container-teorie, .container-test, .game-container{
+	padding: 30px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.rezumat-teorie, .rezumat-test, .game-description{
+	padding-bottom: 20px;
+	padding-right: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color:rgba(0,0,0,0.7);
+}
+
+.imagine-teorie img, .imagine-test img, .game-image img{
+	height: 350px;
+	width: 300px;
+	background-size: contain;
+}
+
+.container-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.titlu-postare-teorie, .titlu-postare-test, .game-title{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color:#84548F;
+	padding-bottom: 15px;
+	letter-spacing: 1px;
+}
+
+#bttn-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container-text button{
+   
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+   color:#84548F;
+   padding: 10px 30px;
+   margin-top:50px; 
+   background-color: #fff;
+   border: 2px solid #84548F;
+   border-radius: 20px;
+
+}
+
+.container-text button:hover{
+   color:#fff;
+   background-color: #84548F;
+
+}
+
+footer{
+
+   font-family: 'Montserrat', sans-serif;
+   font-size: 14px;
+   line-height: 32px;
+	padding: 60px;
+	text-align: center;
+	color: #fff;
+	background-color: #84548F;
+}
+
+#varim{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+@media screen and (max-width: 1439px)
+{
+   
+
+
+   #logo-div a{
+   	font-size: 40px;
+   }
+
+   #menu{
+   	width: 35%;
+   }
+
+.welcome-text{
+    text-align: center;
+    padding: 20px;
+    font-size: 55px;
+}
+
+.welcome-paragraph{
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+   .container-teorie, .container-test, .game-container{
+   	flex-direction: column-reverse;
+   }
+
+.container-teorie, .container-test, .game-container{
+	padding: 5px;
+
+}
+
+.subtitle, .main, #main-change{
+	font-size: 34px;
+}
+
+.rezumat-teorie, .rezumat-test, .game-description{
+	padding-right: 0;
+}
+
+#bttn-container{
+	margin-bottom: 60px;
+}
+
+.imagine-teorie, .imagine-test, .game-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+}
+
+@media screen and (max-width: 767px)
+{
+   
+
+
+   #logo-div a{
+   	font-size: 36px;
+   }
+
+   #menu{
+   	width: 75%;
+   }
+
+.welcome-text{
+    text-align: center;
+    padding: 20px;
+    font-size: 45px;
+}
+
+.welcome-paragraph{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+   .container-teorie, .container-test, .game-container{
+   	flex-direction: column-reverse;
+   }
+
+.container-teorie, .container-test, .game-container{
+	padding: 5px;
+
+}
+
+.subtitle, .main, #main-change{
+	font-size: 34px;
+}
+
+.rezumat-teorie, .rezumat-test, .game-description{
+	padding-right: 0;
+}
+
+#bttn-container{
+	margin-bottom: 60px;
+}
+
+.imagine-teorie, .imagine-test, .game-image{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+}

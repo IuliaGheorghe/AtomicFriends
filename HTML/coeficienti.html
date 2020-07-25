@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>AtomicFriends | Jocuri</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="others.css" rel="stylesheet" type="text/css" />
+  <link href="coeficienti.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <div id="logo-div">
+      <a href="index.html" class="logo"> AtomicFriends </a>
+    </div>
+<div id="menux">
+      <a href="javascript:void(0);" class="icon" onclick="menu()">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
+    </div>
+  </header>
+
+
+   <div id="menu" style="display: none;">
+
+      <a href="index.html"><div>Acasa</div></a>
+      <a href="teorie.html"><div>Teorie</div></a>
+      <a href="teste.html"><div>Teste si Variante</div></a>
+      <a href="calculator.html"><div>Calculator Masa Moleculara</div></a>
+      <a href="jocuri.html"><div>Jocuri</div></a>
+    </div>
+  <div id="content">
+    <div class="main">Reactii - Stabileste Coeficientii</div>
+
+    <form>
+      <div id="user-input"></div>
+     <button type="button" id="verif-button" onclick="verif()">Verifica</button>
+
+    </form>
+
+    <div id= "container-reactie"></div> 
+  
+  </div>
+
+  <div id="rezultat">
+    <div id="resulttext"></div>
+    <div id="raspunsuri"></div>
+    <div id="buttons">
+    <button type="button" id="tryAgain" onclick = "tryAgain()" >Incearca din nou</button>
+    <a href="coeficienti.html"><button type="button" id="newreact">Reactie noua</button></a>
+    </div>
+  </div>
+
+  <footer>
+    Copyright &copy;  Iulia Gheorghe
+    <br/>
+    gheorghe_iulia2012@yahoo.com
+  </footer>
+<script>
+
+    function menu(){
+      
+      if(document.getElementById("menu").style.display==="none")
+      document.getElementById("menu").style.display="flex";
+    else 
+      document.getElementById("menu").style.display="none";
+    }
+  </script>
+<script src="coeficienti.js"></script>
+</body>
+</html>
