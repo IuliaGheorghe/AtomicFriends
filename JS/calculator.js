@@ -273,14 +273,38 @@ function numere(formulaMol, currentInd, formulaMol){
 }
 
 let num = 1;
+let numP =1;
+let inchidParanteza = 0;
+let inchidParantezaP = 0;
+
+function parantezaP(copieFormula){
+  console.log("FM " + copieFormula);
+  let vectorNumere = [];
+  for(let i = 1;i<copieFormula.length;i++)
+    if(inchidParantezaP===0)
+    { console.log(i + ": " + copieFormula[i] + " " + copieFormula[i+1]);
+    if(copieFormula[i]==="]")  
+       { inchidParantezaP =1;
+        console.log("Par pos: " + i);
+        if(Number(copieFormula[i+1]) || copieFormula[i+1]==='0'){ 
+        vectorNumere.push(copieFormula[i+1]); numP=Number(vectorNumere.join("")); 
+          console.log(numP);}
+        }
+      }
+      
+      
+        return numP;
+}
 
 function paranteza(copieFormula){
   console.log("FM " + copieFormula);
   let vectorNumere = [];
   for(let i = 1;i<copieFormula.length;i++)
+    if(inchidParanteza===0)
     { console.log(i + ": " + copieFormula[i] + " " + copieFormula[i+1]);
     if(copieFormula[i]===")")  
-       { console.log("Par pos: " + i);
+       { inchidParanteza =1;
+        console.log("Par pos: " + i);
         if(Number(copieFormula[i+1]) || copieFormula[i+1]==='0'){ 
         vectorNumere.push(copieFormula[i+1]); num=Number(vectorNumere.join("")); 
           console.log(num);}
@@ -308,8 +332,16 @@ function subVerif(copieFormula, object, objectKeys){
 
 function verifica(formulaMoleculara){
  
+ if(formulaMoleculara[0] === "[")  {
+  inchidParantezaP =0;
+  console.log("Am dat de o parantezaP"); numP=parantezaP(formulaMoleculara);
+  formulaMoleculara = formulaMoleculara.slice(1, formulaMoleculara.length);
+  currentIndex++;
+  console.log("F.M " + formulaMoleculara);
+} 
  
  if(formulaMoleculara[0] === "(")  {
+  inchidParanteza =0;
   console.log("Am dat de o paranteza"); num=paranteza(formulaMoleculara);
   formulaMoleculara = formulaMoleculara.slice(1, formulaMoleculara.length);
   currentIndex++;
@@ -330,18 +362,39 @@ function verifica(formulaMoleculara){
   numere(formulaMoleculara,currentIndex, formulaMoleculara);
   console.log("Numarul ce se afla dupa elementul gasit " + nr);
   console.log(num);
-  masaMoleculara+=num*nr*value;
+  masaMoleculara+=numP*num*nr*value;
   console.log("Masa Moleculara Temporara: " + masaMoleculara);
   formulaMoleculara = formulaMoleculara.substring(currentIndex+1, formulaMoleculara.length);
   console.log("Noua formula moleculara: " + formulaMoleculara);
   nr=1;
 
  if(formulaMoleculara[0] === ")")  {
+  
+  console.log(num);
+  console.log(num.toString().length);
+  if(num!==1)
+  formulaMoleculara = formulaMoleculara.slice(num.toString().length+1, formulaMoleculara.length);
+  else
+  formulaMoleculara = formulaMoleculara.slice(num.toString().length, formulaMoleculara.length);
 
-  formulaMoleculara = formulaMoleculara.slice(num.toString().length+1, formulaMoleculara.length); 
   currentIndex+=num.toString().length+1; num=1;
   console.log("F.M " + formulaMoleculara);}
+
+  if(formulaMoleculara[0] === "]")  {
+  console.log(numP);
+  console.log(numP.toString().length);
+  if(numP!==1)
+  formulaMoleculara = formulaMoleculara.slice(numP.toString().length+1, formulaMoleculara.length); 
+  else
+
+  formulaMoleculara = formulaMoleculara.slice(numP.toString().length, formulaMoleculara.length); 
+  currentIndex+=numP.toString().length+1; numP=1;
+  console.log("F.M " + formulaMoleculara);}
+
+
   if(formulaMoleculara.length!==0) { let formulaMol= formulaMoleculara; verifica(formulaMol);}
+
+  
 
   return true;
 }
