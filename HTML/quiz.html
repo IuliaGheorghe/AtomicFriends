@@ -3,12 +3,13 @@
 <head>
   <title>AtomicFriends | Jocuri</title>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
-  <link href="CSS/others.css" rel="stylesheet" type="text/css" />
-  <link href="CSS/coeficienti.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/others.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/quiz.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <header>
@@ -32,27 +33,28 @@
       <a href="jocuri.html"><div>Jocuri</div></a>
     </div>
   <div id="content">
-    <div class="main">Reactii - Stabileste Coeficientii</div>
+    <div class="main">It's Quiz Time</div>
 
+    <div id="question"></div>
     <form>
-      <div id="user-input"></div>
-     <button type="button" id="verif-button" onclick="verif()">Verifica</button>
-
+      <div id="answers">
+        <button type="button" id="ans1" class="ans" onclick= "verifica(1)"></button>
+        <button type="button" id="ans2" class="ans" onclick= "verifica(2)"></button>
+        <button type="button" id="ans3" class="ans" onclick= "verifica(3)"></button>
+        <button type="button" id="ans4" class="ans" onclick= "verifica(4)"></button>
+        <button type="button" id="ans5" class="ans" onclick= "verifica(5)"></button>
+      </div>
     </form>
 
-    <div id= "container-reactie"></div> 
+  </div>
+
+  <div id="scor">
+    <div id="main-change"></div>
+    <div id="punctaj"></div>
+    <a href="quiz.html"> <button type="button">Mai incearca o data </button></a>
+  </div>
   
-  </div>
-
-  <div id="rezultat">
-    <div id="resulttext"></div>
-    <div id="raspunsuri"></div>
-    <div id="buttons">
-    <button type="button" id="tryAgain" onclick = "tryAgain()" >Incearca din nou</button>
-    <a href="coeficienti.html"><button type="button" id="newreact">Reactie noua</button></a>
-    </div>
-  </div>
-
+  
   <footer>
     Copyright &copy;  Iulia Gheorghe
     <br/>
@@ -68,6 +70,8 @@
       document.getElementById("menu").style.display="none";
     }
   </script>
-<script src="JS/coeficienti.js"></script>
+
+<script src="../JS/quiz.js"></script>
+
 </body>
 </html>

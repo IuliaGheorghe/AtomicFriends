@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <title>AtomicFriends | Jocuri</title>
+  <title>AtomicFriends | Calculator</title>
   <meta charset="utf-8">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
-  <link href="CSS/others.css" rel="stylesheet" type="text/css" />
-  <link href="CSS/quiz.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/others.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/calculator.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <header>
@@ -32,34 +31,33 @@
       <a href="calculator.html"><div>Calculator Masa Moleculara</div></a>
       <a href="jocuri.html"><div>Jocuri</div></a>
     </div>
+
   <div id="content">
-    <div class="main">It's Quiz Time</div>
+    <div class="main">Calculator Masa Moleculara</div>
 
-    <div id="question"></div>
     <form>
-      <div id="answers">
-        <button type="button" id="ans1" class="ans" onclick= "verifica(1)"></button>
-        <button type="button" id="ans2" class="ans" onclick= "verifica(2)"></button>
-        <button type="button" id="ans3" class="ans" onclick= "verifica(3)"></button>
-        <button type="button" id="ans4" class="ans" onclick= "verifica(4)"></button>
-        <button type="button" id="ans5" class="ans" onclick= "verifica(5)"></button>
-      </div>
+      <label for="formula-moleculara">Formula Moleculara:</label><br>
+      <input type="text" id="formula-moleculara" name="formula-moleculara"><br>
+
+      <button type="button" onclick="flow()">Calculeaza</button>
     </form>
-
+  
+  <div class="text">Exemple: C3H8, CaCO3</div>
   </div>
 
-  <div id="scor">
-    <div id="main-change"></div>
-    <div id="punctaj"></div>
-    <a href="quiz.html"> <button type="button">Mai incearca o data </button></a>
+
+  <div id="result">
+    <div class="main">Masa moleculara este: </div>
+    <div id="nr"></div>
+    <a href="calculator.html"><button type="button" id="newtypebttn">Revino</button></a>
   </div>
-  
-  
+
   <footer>
     Copyright &copy;  Iulia Gheorghe
     <br/>
     gheorghe_iulia2012@yahoo.com
   </footer>
+
 <script>
 
     function menu(){
@@ -70,8 +68,8 @@
       document.getElementById("menu").style.display="none";
     }
   </script>
-
-<script src="JS/quiz.js"></script>
+<script src="../JS/calculator.js"></script>
 
 </body>
+
 </html>

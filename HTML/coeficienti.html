@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <title>AtomicFriends | Calculator</title>
+  <title>AtomicFriends | Jocuri</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
-  <link href="CSS/others.css" rel="stylesheet" type="text/css" />
-  <link href="CSS/calculator.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/others.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/coeficienti.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
   <header>
@@ -31,25 +31,26 @@
       <a href="calculator.html"><div>Calculator Masa Moleculara</div></a>
       <a href="jocuri.html"><div>Jocuri</div></a>
     </div>
-
   <div id="content">
-    <div class="main">Calculator Masa Moleculara</div>
+    <div class="main">Reactii - Stabileste Coeficientii</div>
 
     <form>
-      <label for="formula-moleculara">Formula Moleculara:</label><br>
-      <input type="text" id="formula-moleculara" name="formula-moleculara"><br>
+      <div id="user-input"></div>
+     <button type="button" id="verif-button" onclick="verif()">Verifica</button>
 
-      <button type="button" onclick="flow()">Calculeaza</button>
     </form>
+
+    <div id= "container-reactie"></div> 
   
-  <div class="text">Exemple: C3H8, CaCO3</div>
   </div>
 
-
-  <div id="result">
-    <div class="main">Masa moleculara este: </div>
-    <div id="nr"></div>
-    <a href="calculator.html"><button type="button" id="newtypebttn">Revino</button></a>
+  <div id="rezultat">
+    <div id="resulttext"></div>
+    <div id="raspunsuri"></div>
+    <div id="buttons">
+    <button type="button" id="tryAgain" onclick = "tryAgain()" >Incearca din nou</button>
+    <a href="coeficienti.html"><button type="button" id="newreact">Reactie noua</button></a>
+    </div>
   </div>
 
   <footer>
@@ -57,7 +58,6 @@
     <br/>
     gheorghe_iulia2012@yahoo.com
   </footer>
-
 <script>
 
     function menu(){
@@ -68,8 +68,6 @@
       document.getElementById("menu").style.display="none";
     }
   </script>
-<script src="JS/calculator.js"></script>
-
+<script src="../JS/coeficienti.js"></script>
 </body>
-
 </html>
