@@ -1,0 +1,29 @@
+body{
+	font-family: "Montserat", sans-serif;
+	letter-spacing: 0.8px;
+}
+
+.main{
+	padding: 50px;
+}
+
+.box{
+	text-align: center;
+	background-color: mediumpurple;
+	background:url('https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/newseventsimage_1537198485721_mainnews2012_x1.jpg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 140px;
+	height: 140px;
+	color: #fff;
+	border-radius: 30px;
+	margin:10px;
+	font-size: 20px;
+    padding: 20px;
+}
+
+.box:hover{
+	font-size: 23px;
+	width: 180px;
+	height: 180px;
+}
