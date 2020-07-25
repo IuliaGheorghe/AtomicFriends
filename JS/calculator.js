@@ -275,13 +275,17 @@ function numere(formulaMol, currentInd, formulaMol){
 let num = 1;
 
 function paranteza(copieFormula){
+  console.log("FM " + copieFormula);
   let vectorNumere = [];
   for(let i = 1;i<copieFormula.length;i++)
-    if(copieFormula[i]=")")  
-       {if(Number(copieFormula[i+1]) || copieFormula[i+1]==='0'){ 
+    { console.log(i + ": " + copieFormula[i] + " " + copieFormula[i+1]);
+    if(copieFormula[i]===")")  
+       { console.log("Par pos: " + i);
+        if(Number(copieFormula[i+1]) || copieFormula[i+1]==='0'){ 
         vectorNumere.push(copieFormula[i+1]); num=Number(vectorNumere.join("")); 
           console.log(num);}
         }
+      }
       
       
         return num;
