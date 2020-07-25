@@ -82,7 +82,7 @@ span a:hover{
 	justify-content: center;
 	margin: 10px 0;
 	height: 650px;
-	background-image: url('WelcomeHome.jpg');
+	background-image: url('../Imagini/WelcomeHome.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
     background-attachment: fixed;
