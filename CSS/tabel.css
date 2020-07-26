@@ -43,7 +43,266 @@
       letter-spacing: 0.6px;
     }
 
-   
+    @media screen and (max-width: 1870px){
+
+       table * {
+       word-break: break-all;
+
+       }
+
+
+     .atom-name, .atom-symbol, .atom-mass, .Z, table .fa{
+      padding: 0;
+      letter-spacing: 0;
+     }
+
+     .Z{
+      width: 50px;
+      font-size: 12px;
+      display: flex;
+      padding-left: 10px;
+      align-items: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      height: 24px;
+     }
+
+     table .fa{
+      font-size: 18px;
+     }
+
+
+      .atom{
+      width: 58px;
+      border: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+     }
+
+
+     .atom-symbol{
+
+      font-size: 18px;
+     }
+
+     .atom-mass{
+      padding-top: 4px;
+      font-size: 10px;
+     }
+
+     .atom-name{
+      width: 60px;
+      font-size: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      height: 24px;
+     }
+
+
+
+   }
+
+  @media screen and (max-width: 1130px){
+
+       table * {
+       word-break: break-all;
+
+       }
+
+
+     .atom-name, .atom-symbol, .atom-mass, .Z, table .fa{
+      padding: 0;
+      letter-spacing: 0;
+     }
+
+     .Z{
+      width: 30px;
+      font-size: 8px;
+      display: flex;
+      padding-left: 10px;
+      align-items: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      height: 24px;
+     }
+
+     table .fa{
+      font-size: 15px;
+     }
+
+
+      .atom{
+      width: 38px;
+      border: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+     }
+
+
+     .atom-symbol{
+
+      font-size: 15px;
+     }
+
+     .atom-mass{
+      padding-top: 10px;
+      font-size: 8px;
+     }
+
+     .atom-name{
+      width: 40px;
+      font-size: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      height: 24px;
+     }
+
+
+
+   }
+
+  
+  @media screen and (max-width: 768px){
+
+       table * {
+       word-break: break-all;
+
+       }
+
+
+     .atom-name, .atom-symbol, .atom-mass, .Z, table .fa{
+      text-align: center;
+      padding: 0;
+      letter-spacing: 0;
+     }
+
+     .Z{
+      width: 32px;
+      font-size: 3.8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      height: 20px;
+     }
+
+     table .fa{
+      font-size: 14px;
+     }
+
+
+      .atom{
+      width: 30px;
+      border: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+     }
+
+
+     .atom-symbol{
+
+      font-size: 8px;
+     }
+
+     .atom-mass{
+      padding-top: 4px;
+      font-size: 6px;
+     }
+
+     .atom-name{
+      width: 32px;
+      font-size: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      height: 20px;
+     }
+
+
+
+   }
+
+      @media screen and (max-width: 630px){
+
+       table * {
+       word-break: break-all;
+
+       }
+
+
+     .atom-name, .atom-symbol, .atom-mass, .Z, table .fa{
+      text-align: center;
+      padding: 0;
+      letter-spacing: 0;
+     }
+
+     .Z{
+      width: 20px;
+      font-size: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      height: 10px;
+     }
+
+     table .fa{
+      font-size: 7.5px;
+     }
+
+
+      .atom{
+      width: 18px;
+      border: 1px solid #ddd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 25px;
+     }
+
+
+     .atom-symbol{
+
+      font-size: 6px;
+     }
+
+     .atom-mass{
+      padding-top: 2px;
+      font-size: 3.3px;
+     }
+
+     .atom-name{
+      width: 20px;
+      font-size: 2.7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      height: 10px;
+     }
+
+
+
+   }
+
+
    @media screen and (max-width: 425px){
 
        table * {
@@ -108,11 +367,71 @@
 
 
    }
-  
+
+    @media screen and (max-width: 350px){
+
+       table * {
+       word-break: break-all;
+
+       }
+
+
+     .atom-name, .atom-symbol, .atom-mass, .Z, table .fa{
+      text-align: center;
+      padding: 0;
+      letter-spacing: 0;
+     }
+
+     .Z{
+      width: 8px;
+      font-size: 2.4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      height: 8px;
+     }
+
+     table .fa{
+      font-size: 4.8px;
+     }
+
+
+      .atom{
+      width: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 18px;
+      border: none;
+     }
+
+
+     .atom-symbol{
+
+      font-size: 3.7px;
+     }
+
+     .atom-mass{
+      padding-top: 1.9px;
+      font-size: 1.8px;
+     }
+
+     .atom-name{
+      width: 8px;
+      font-size: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      height: 8px;
+     }
 
 
 
-
+   }
 
 
 
