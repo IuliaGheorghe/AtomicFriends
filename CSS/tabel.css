@@ -75,11 +75,12 @@
 
 
       .atom{
+      width: 16px;
+      border: 0.1px solid #ddd;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 25px;
-      border: none;
      }
 
 
@@ -90,7 +91,7 @@
 
      .atom-mass{
       padding-top: 2px;
-      font-size: 3.5px;
+      font-size: 3px;
      }
 
      .atom-name{
