@@ -75,8 +75,8 @@
 
 
       .atom{
-      width: 16px;
-      border: 0.1px solid #ddd;
+      width: 18px;
+      border: 1px solid #ddd;
       display: flex;
       justify-content: center;
       align-items: center;
