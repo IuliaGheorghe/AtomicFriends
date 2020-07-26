@@ -1,0 +1,77 @@
+   table * {
+    word-break: break-all;
+
+   }
+
+
+    table{
+      flex-wrap: wrap;
+    }
+
+    td{
+      margin-bottom: 4px;
+    }
+
+
+    .Z{
+      padding: 8px;
+      padding-left: 18px;
+      color:#fff;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .atom{
+      height: 80px;
+      background-color: #fff;
+      border:1px solid gray;
+    }
+
+    .atom-symbol{
+      font-size: 30px;
+      padding: 5px;
+    }
+
+    .atom, .atom-name{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .atom-name{
+      width:72px;
+      padding: 14px;
+      color:#fff;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      letter-spacing: 0.6px;
+    }
+
+   
+   @media screen and (max-width: 620px){
+
+     .atom-name, .atom-symbol, .atom-mass, .Z, .fa{
+      text-align: center;
+      width:18px;
+      padding: 0;
+      font-size: 4px;
+      height: 3vh;
+     }
+
+     .atom{
+      height: 25px;
+     }
+
+
+   }
+  
+
+
+
+
+
+
+
+
+
