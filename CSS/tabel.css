@@ -433,6 +433,21 @@
 
    }
 
+#desc-element{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  padding: 50px;
+  background-color: tomato;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 150px;
+
+
+}
 
 
 
