@@ -55,6 +55,7 @@ let joc = [
 let randomNum  = Math.floor(Math.random() * joc.length);
 
 let denumireComp = document.getElementById("q-nume");
+
 let raspunsUser = document.getElementById("q-raspuns");
 
 let corectScreen = document.getElementById("r-corect");
@@ -64,7 +65,7 @@ denumireComp.innerHTML=joc[randomNum].denumire;
 
 function test(raspCorect){
 
-  if(raspunsUser.value===raspCorect) {
+  if(raspunsUser.value.replace(/\s/g, '')===raspCorect) {
     document.getElementById("content-JSF").style.display="none";
     corectScreen.style.display="flex";
   }
