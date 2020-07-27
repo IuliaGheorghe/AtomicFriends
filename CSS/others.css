@@ -27,3 +27,96 @@ body{
 	width: 180px;
 	height: 180px;
 }
+
+#q-nume{
+	text-align: center;
+	font-size: 70px;
+	padding: 30px;
+	letter-spacing: 1.5px;
+	color: mediumpurple;
+	font-weight: 900;
+}
+
+
+hr{
+	width: 35vw;
+	height: 3px;
+	background-color: mediumpurple;
+	margin-bottom: 60px;
+}
+
+#q-raspuns{
+	width:40vw;
+	margin-left: 28vw;
+	padding: 10px 2vw;
+	border-color: mediumpurple;
+	color:mediumpurple;
+	border-radius: 10px;
+	font-size: 28px;
+	text-align: center;
+}
+
+/*#84548F*/
+
+#q-trimite{
+	width:20vw;
+	height: 8vh;
+	font-size: 27px;
+	color:mediumpurple;
+	background-color: #fff;
+	border:4px solid mediumpurple;
+	border-radius: 15px;
+	margin: 50px;
+	margin-left: 40vw;
+	margin-bottom: 100px;
+	letter-spacing: 1.2px;
+
+}
+
+#q-trimite:hover{
+	background-color: mediumpurple;
+	color: #fff;
+	cursor: pointer;
+}
+
+#r-corect, #r-gresit{
+	display: flex;
+	flex-direction: column;
+	width:100vw;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	font-size: 100px;
+	font-weight: bold;
+	letter-spacing: 1.3px;
+	color:#fff;
+	background-color: mediumpurple;
+}
+
+#r-gresit{
+	background-color: purple;
+}
+
+#raspuns-c{
+	font-size: 40px;
+	font-weight: 300;
+	padding-top: 30px;
+	letter-spacing: 1.5px;
+}
+
+#v-bttn{
+	margin: 100px;
+	width:25vw;
+	border-radius: 20px;
+	border:2px solid #fff;
+	background-color: #fff;
+	color: mediumpurple;
+	font-size: 30px;
+	letter-spacing: 1.3px;
+	padding: 20px;
+}
+
+#v-bttn:hover{
+	background-color: orange;
+	color:#fff;
+}
