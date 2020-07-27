@@ -227,6 +227,7 @@ footer{
 	
 }
 
+
 @media screen and (max-width: 1439px)
 {
    
@@ -337,11 +338,12 @@ footer{
 
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 330px){
 
-       .logo{
-       	font-size: 27px;
+       #logo-div a{
+       	font-size: 28px;
        }
 
 
    }
+
