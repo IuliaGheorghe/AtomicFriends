@@ -65,12 +65,12 @@ denumireComp.innerHTML=joc[randomNum].denumire;
 function test(raspCorect){
 
   if(raspunsUser.value===raspCorect) {
-    document.getElementById("content").style.display="none";
+    document.getElementById("content-JSF").style.display="none";
     corectScreen.style.display="flex";
   }
    else
    {
-   	document.getElementById("content").style.display="none";
+   	document.getElementById("content-JSF").style.display="none";
     gresitScreen.style.display="flex";
     document.getElementById("raspuns-c").innerHTML = "Raspunsul corect era: " + raspCorect;
 }
@@ -91,6 +91,6 @@ function jocFormula(){
 function okFunction(){
 	corectScreen.style.display="none";
 	gresitScreen.style.display="none";
-	document.getElementById("content").style.display="block";
+	document.getElementById("content-JSF").style.display="flex";
 	document.getElementById("q-raspuns").value="";
 }
