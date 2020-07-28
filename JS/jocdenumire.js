@@ -76,11 +76,11 @@ let raspunsUser = document.getElementById("q-raspuns");
 let corectScreen = document.getElementById("r-corect");
 let gresitScreen = document.getElementById("r-gresit");
 
-denumireComp.innerHTML=joc[randomNum].denumire;
+denumireComp.innerHTML=joc[randomNum].raspuns;
 
 function test(raspCorect){
 
-  if(raspunsUser.value.replace(/\s/g, '')===raspCorect) {
+  if(raspunsUser.value.replace(/\s/g, '').toLowerCase()===raspCorect.replace(/\s/g, '').toLowerCase()) {
     document.getElementById("content-JSF").style.display="none";
     corectScreen.style.display="flex";
   }
@@ -95,10 +95,10 @@ function test(raspCorect){
 
 function jocFormula(){
    
-   test(joc[randomNum].raspuns);
+   test(joc[randomNum].denumire);
 
    randomNum = Math.floor(Math.random() * joc.length);
-   denumireComp.innerHTML = joc[randomNum].denumire;
+   denumireComp.innerHTML = joc[randomNum].raspuns;
 
   
 
