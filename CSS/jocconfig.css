@@ -1,0 +1,33 @@
+.op{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.num{
+	width: 40px;
+	padding: 10px;
+	border: 2px solid mediumpurple;
+	border-radius: 8px;
+	text-align: center;
+	font-size: 20px;
+	color: mediumpurple;
+	margin: 25px;
+}
+
+select {
+	width: 100px;
+	text-align: center;
+	padding: 10px;
+	font-size: 18px;
+}
+
+.fa-plus-circle{
+	margin: 40px;
+}
+
+#numar-z{
+	font-size: 20px;
+	padding: 20px;
+	color: mediumpurple;
+}
