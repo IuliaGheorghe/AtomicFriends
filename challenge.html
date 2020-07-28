@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <title>AtomicFriends | Text</title>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/others.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/quiz.css" rel="stylesheet" type="text/css" />
+  <link href="CSS/challenge.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <div id="logo-div">
+      <a href="index.html" class="logo"> AtomicFriends </a>
+    </div>
+<div id="menux">
+      <a href="javascript:void(0);" class="icon" onclick="menu()">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      </a>
+    </div>
+  </header>
+
+
+   <div id="menu" style="display: none;">
+
+      <a href="index.html"><div>Acasa</div></a>
+      <a href="teorie.html"><div>Teorie</div></a>
+      <a href="teste.html"><div>Teste si Variante</div></a>
+      <a href="calculator.html"><div>Calculator Masa Moleculara</div></a>
+      <a href="tabel.html"><div>Tabelul Periodic</div></a>
+      <a href="jocuri.html"><div>Jocuri</div></a>
+    </div>
+    
+    <div id="pre-cont">
+      <div class="main">Provocare</div>
+      <div id = "precont-txt">Aceasta este teoria pe care o vei putea accesa daca rezolvi o provocare. Pentru fiecare provocare vei debloca o pagina premium.</div>
+      <ol>
+        <li>Alcani</li>
+        <li>Alchene</li>
+      </ol>
+      <button type="button" onclick="showContent()">Incepe</button>
+    </div>
+
+    <div id="content" style="display: none">
+       <div class="main">Provocare</div>
+       <div id="intrebare">Aceasta este o intrebare</div>
+       <div id="time">Timp Ramas: 05:00</div>
+       <div id='optiuni'>
+        <div class="optiuni-ch" id="op1" onclick="chOption(1)">Optiune 1</div>
+        <div class="optiuni-ch" id="op2" onclick="chOption(2)">Optiune 2</div>
+        <div class="optiuni-ch" id="op3" onclick="chOption(3)">Optiune 3</div>
+        <div class="optiuni-ch" id="op4" onclick="chOption(4)">Optiune 4</div>
+       </div>
+    </div>
+
+    <div id="post-contW" style="display: none">
+      <div id = "precont-txt">Din pacate ai raspuns gresit. De aceasta data nu ai trecut de provocare. Incearca din nou apasand butonul de mai jos!</div>
+      
+      <button type="button" onclick="showRes()">Restart</button>
+    </div>
+
+    <div id="post-contTL" style="display: none">
+      <div id = "precont-txt">Din pacate timpul s-a terminat. De aceasta data nu ai trecut de provocare. Incearca din nou apasand butonul de mai jos!</div>
+      
+      <button type="button" onclick="showRes()">Restart</button>
+    </div>
+
+    <div id="post-contR" style="display: none">
+      <div id = "precont-txt">Felicitari! Ai trecut de provocarea noastra! Alege acum o lectie premium din lista de mai jos:</div>
+      <ol>
+        <li><a href="alcani.html">Alcani</a></li>
+        <li><a href="alchene.html">Alchene</a></li>
+      </ol>
+    </div>
+
+
+
+  
+  <footer>
+    Copyright &copy;  Iulia Gheorghe
+    <br/>
+    gheorghe_iulia2012@yahoo.com
+  </footer>
+<script>
+
+    function menu(){
+      
+      if(document.getElementById("menu").style.display==="none")
+      document.getElementById("menu").style.display="flex";
+    else 
+      document.getElementById("menu").style.display="none";
+    }
+  </script>
+
+  <script src="JS/challenge.js"></script>
+
+</body>
+</html>
