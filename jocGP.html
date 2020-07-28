@@ -39,27 +39,58 @@
      <div class="main">Scrie Configuratia Electronica a Atomului</div>
      <div id="q-nume">H</div>
      <div id="numar-z">Z: 1</div>
+     <div id="config-atom">Configuratie: 1s2</div>
      <hr>
-     <div id="options" style="display: flex; justify-content: space-around; align-items: center; width: 100vw; flex-wrap: wrap;">
-     <div class="op" id="op1" style="display: flex; flex-direction: column;">
-       <input type="text" class="num">
-       <select id="var" name="var">
-         <option value="1s">1s</option>
-         <option value="2s">2s</option>
-         <option value="2p">2p</option>
-         <option value="3s">3s</option>
-         <option value="3p">3p</option>
-         <option value="4s">4s</option>
-         <option value="3d">3d</option>
-         <option value="4p">4p</option>
+     <div id="options" style="display: flex; justify-content: center; align-items: center; width: 100vw; flex-wrap: wrap;">
+     <div class="op" style="display: flex; flex-direction: column;">
+       <div>Grupa:</div>
+       <select id="varG" name="varG" style="margin: 8px;">
+         <option value="1 / I.A">1 / I.A</option>
+         <option value="2 / II.A">2 / II.A</option>
+         <option value="3 / III.B">3 / III.B</option>
+         <option value="4 / IV.B">4 / IV.B</option>
+         <option value="5 / V.B">5 / V.B</option>
+         <option value="6 / VI.B">6 / VI.B</option>
+         <option value="7 / VII.B">7 / VII.B</option>
+         <option value="8 / VIII.B">8 / VIII.B</option>
+         <option value="9 / VIII.B">9 / VIII.B</option>
+         <option value="10 / VIII.B">10 / VIII.B</option>
+         <option value="11 / I.B">11 / I.B</option>
+         <option value="12 / II.B">12 / II.B</option>
+         <option value="13 / III.A">13 / III.A</option>
+         <option value="14 / IV.A">14 / IV.A</option>
+         <option value="15 / V.A">15 / V.A</option>
+         <option value="16 / VI.A">16 / VI.A</option>
+         <option value="17 / VII.A">17 / VII.A</option>
+         <option value="18 / VIII.A">18 / VIII.A</option>
+       </select>
+    </div>
+    <div class="op" style="display: flex; flex-direction: column; ">
+       <div>Perioada:</div>
+       <select id="varP" name="varP" style="margin: 8px;">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="6">6</option>
+         <option value="7">7</option>
+       </select>
+    </div>
+    <div class="op" style="display: flex; flex-direction: column; ">
+       <div>Blocul:</div>
+       <select id="varB" name="varB" style="margin: 8px;">
+         <option value="s">s</option>
+         <option value="p">p</option>
+         <option value="d">d</option>
+         <option value="f">f</option>
        </select>
     </div>
     
 
     </div>
-    <i class="fa fa-plus-circle" aria-hidden="true" style="font-size: 40px; color:mediumpurple;" onclick="plusconfig()"></i>
      <br><br>
-     <div id="q-trimite" onclick="jocConfig()" >Trimite</div>
+     <div id="q-trimite" onclick="jocGP()" >Trimite</div>
      
   
   </div>
@@ -92,7 +123,7 @@
     }
   </script>
 
-  <script src="JS/jocconfig.js"></script>
+  <script src="JS/jocGP.js"></script>
 
 </body>
 </html>
