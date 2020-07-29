@@ -10,6 +10,10 @@
       margin-bottom: 4px;
     }
 
+    td:hover{
+      cursor: pointer;
+    }
+
 
     .Z{
       padding: 8px;
